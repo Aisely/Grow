@@ -3,8 +3,8 @@ import {useEffect} from 'react'
 function Programs(){
     return(
         <section id="programs">
-            <div className="container mx-auto">
-                <h2 className="mt-32 text-center font-bold text-6xl">
+            <div className="container mx-auto mt-12 space-y-12">
+                <h2 className="text-center font-bold text-6xl">
                     Courses
                 </h2>
                 <div className="flex flex-col mt-10 text-center">
