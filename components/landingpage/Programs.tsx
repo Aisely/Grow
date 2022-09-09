@@ -1,9 +1,6 @@
 import {useEffect} from 'react'
 
 function Programs(){
-    function handleClick(){
-        
-    }
     return(
         <section id="programs">
             <div className="container mx-auto">
