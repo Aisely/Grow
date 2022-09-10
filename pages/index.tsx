@@ -7,16 +7,16 @@ import Features from '../components/landingpage/Features'
 import Footer from '../components/landingpage/Footer'
 import Hero from '../components/landingpage/Hero'
 import Navbar from '../components/landingpage/Navbar'
-import Testimonials from '../components/landingpage/Testimonials'
+import Launch from '../components/landingpage/Launch'
 
 const Home: NextPage = () => {
   return (
     <>
     <Navbar />
     <Hero />
+    <Launch />
     <Features />
     <Community/>
-    <Testimonials />
     <Banner />
     <Footer />
     </>
