@@ -60,7 +60,7 @@ function Navbar({ containerRef, navTextColor, logoColor }: NavbarProps) {
     <>
       {!isDesktop ? (
         // <nav className={classNames(scrollPosition > 0 ? 'sticky bg-main' : '', ' top-0  z-10 flex justify-center items-center')}>
-        <nav className={'sticky bg-main top-0  z-10 flex justify-center items-center'}>
+        <nav className={'sticky bg-main top-0  z-[100000000] flex justify-center items-center'}>
           <div className=' flex justify-between container px-4 mx-auto py-4 z-10'>
             <div className="pt-2 px-4">
               <div className=" md:w-[150px] w-[100px] cursor-pointer">
@@ -169,7 +169,7 @@ function Navbar({ containerRef, navTextColor, logoColor }: NavbarProps) {
         </nav>
       ) : (
         // <nav className={classNames(scrollPosition > 0 ? 'sticky bg-main shadow' : 'shadow-none', " transition-shadow  mx-auto p-6 top-0 z-10")}>
-        <nav className={"sticky bg-main   mx-auto py-4 px-20 top-0 z-10"}>
+        <nav className={"sticky bg-main   mx-auto py-4 px-20 top-0 z-[100000000]"}>
           <div className=" flex items-center justify-between">
             <div className="pt-2">
               <div className="md:w-[150px] w-[100px] cursor-pointer ml-2">

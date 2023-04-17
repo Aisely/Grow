@@ -29,6 +29,11 @@
     line-height: 1;
 }
 
+.center-all {
+    justify-content: center;
+    align-items: center;
+}
+
 .prevent-select {
     -webkit-user-select: none;
     /* Safari */

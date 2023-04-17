@@ -19,10 +19,11 @@ import { atom } from 'jotai'
 
 
 // import fireStore from './api/firestore/api'
-import { useFirestore } from 'firecrud-react'
+// import { useFirestore } from 'firecrud-react'
 import { db } from '../firebase'
 import NewPricing from '../components/landingpage/NewPricing'
 import NewFeatures from '../components/landingpage/NewFeatures'
+import CourseModule from '../components/courses/Modules/CourseModule/CourseModule'
 
 export const autofillAtom = atom("")
 
@@ -64,6 +65,7 @@ const Home: NextPage = () => {
       //  navTextColor={navTextColor}
       // logoColor={logoColor}
       />
+      <CourseModule />
       <Hero />
       <Companies />
       {/* <Launch /> */}
