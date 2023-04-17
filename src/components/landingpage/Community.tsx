@@ -45,12 +45,12 @@ const Community = () => {
   const controls = useAnimation()
   const [autofill, setAutofill] = useAtom(autofillAtom)
 
-const SendAutofill = () => {
-  console.log("work mffffffffffffffffffffffffffffff")
-  setAutofill("I would like to join the Grow community")
-  console.log(autofill)
-}
-  
+  const SendAutofill = () => {
+    console.log("work mffffffffffffffffffffffffffffff")
+    setAutofill("Bonjour! Je suis Gideon de Cotonou. J'aimerais faire partir de votre communauté de développeur.")
+    console.log(autofill)
+  }
+
   useEffect(() => {
     if (inView) {
       controls.start('visible')
@@ -62,7 +62,7 @@ const SendAutofill = () => {
 
   return (
     <>
-      <section id="community" className="bg-[#448a9c]">
+      <section id="community" className="bg-[#FFDD00]">
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
@@ -120,23 +120,23 @@ const SendAutofill = () => {
             </div>
           </div>
           </div> */}
-        <div className="container relative flex flex-col py-28 px-12 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row ">
+        <div className="container relative flex flex-col py-28 px-12 mx-auto mt-10 md:mt-32 space-y-12 md:space-y-0 md:flex-row ">
           <div className="flex flex-col space-y-12 md:w-1/2">
             <motion.h2
               ref={ref}
               initial='hidden'
               variants={CommunityHeaderVariants}
               animate={controls}
-              className="text-white max-w-lg text-4xl md:text-5xl font-bold text-center md:text-left"
+              className="text-[#222222] max-w-lg text-4xl md:text-5xl font-bold text-center md:text-left"
             >
-              Join the Grow Community
+              Rejoignez la communauté Grow
             </motion.h2>
             <motion.p
               initial='hidden'
               variants={headerCaptionVariants}
               animate={controls}
-              className="text-white text-lg md:text-lg font-medium text-center md:text-left">
-              Join our community today and <br /> unlock your potential  to become a part <br />of the next generation of African tech leaders!
+              className="text-[#222222] text-lg md:text-lg font-medium text-center md:text-left">
+              Rejoignez notre communauté aujourd&apos;hui et ouvrez<br />  votre potentiel pour faire partie de la prochaine génération<br /> de responsables technologiques africains !
             </motion.p>
           </div>
           <div className="flex justify-center md:justify-end items-center text-center space-y-12 md:w-1/2">
@@ -148,10 +148,10 @@ const SendAutofill = () => {
             >
               <Link href='/contact'>
                 <button
-                onClick={SendAutofill}
+                  onClick={SendAutofill}
                   // onClick={onOpen}
-                  className='bg-white startedBtn text-main border-none mr-2' >
-                  Join now
+                  className='bg-[#0D3B66] startedBtn text-[#FBFBFF] border-none mr-2' >
+                 Rejoignez nous
                 </button>
               </Link>
             </motion.div>
